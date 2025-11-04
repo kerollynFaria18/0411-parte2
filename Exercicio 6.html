@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <p>Jogador 1: Chris</p>
+    <script>
+        var para = document.querySelector('p');
+
+        para.addEventListener('click', atualizarNome);
+
+        function atualizarNome() {
+            var nome = prompt('Insira um novo nome');
+            para.textContent = 'Jogador 1: ' + nome;
+        }
+    </script>
+</body>
+</html>
